@@ -272,7 +272,7 @@ def persist_user_tokens():
 if __name__ == "__main__":
     # 北京时间
     time_bj = get_beijing_time()
-        # 凌晨不执行，避免延迟任务提交异常低步数
+    # 凌晨不执行，避免延迟任务提交异常低步数
     if time_bj.hour < 6:
         print("SKIP: 北京时间凌晨，跳过本次执行")
         exit(0)
